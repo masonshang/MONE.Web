@@ -15,7 +15,6 @@ namespace MONE.BLL
     {
         public UserService() : base(RepositoryFactory.UserRepository) { }
 
-        //test merge
         public bool Exist(string userName) { return CurrentRepository.Exist(u => u.UserName == userName); }
 
         public User Find(int userID) { return CurrentRepository.Find(u => u.UserID == userID); }
